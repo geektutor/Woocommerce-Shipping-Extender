@@ -9,6 +9,6 @@ function add_custom_states_to_country( $states ) {
         );
 	//unset lagos
 	unset($states['NG']['LA']); 
-	$new_states = array_merge($states['NG'],$addition);
-    return $new_states;
+	$states['NG'] = array_merge($states['NG'],$addition);
+    return $states;
 }
